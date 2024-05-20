@@ -1,0 +1,3 @@
+spring.kafka.bootstrap-servers=localhost:9092
+spring.kafka.consumer.group-id=jt-group-1
+server.port:9292
