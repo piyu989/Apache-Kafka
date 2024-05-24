@@ -1,5 +1,0 @@
-package com.consumer.consuming;
-
-public class KafkaMessageListiner {
-
-}

@@ -1,5 +1,0 @@
-package com.pro.config;
-
-public class KafkaProducerConfig {
-
-}

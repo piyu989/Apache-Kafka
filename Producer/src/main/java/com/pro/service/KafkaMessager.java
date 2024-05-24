@@ -13,7 +13,7 @@ public class KafkaMessager {
 	private KafkaTemplate<String, Object> template;
 	
 	public void sendMessage(String message) {
-		CompletableFuture<SendResult<String,Object>>future = template.send("Demo-2",message);
+		CompletableFuture<SendResult<String,Object>>future = template.send("test",message);
 	
 		future.whenComplete((result,ex)->{
 			if(ex==null) {
