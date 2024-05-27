@@ -19,9 +19,9 @@ public class Eventcontroller {
 	@GetMapping("/getmessage/{message}")
 	public ResponseEntity<?> publishMessage(@PathVariable String message){
 		try {
-			for(int i=0;i<1000;i++) {
-				messager.sendMessage(message+" : "+i);
-			}
+//			for(int i=0;i<1000;i++) {
+				messager.sendMessage(message+" : ");
+//			}
 			return ResponseEntity.ok("done");
 		}catch (Exception e) {
 			// TODO: handle exception

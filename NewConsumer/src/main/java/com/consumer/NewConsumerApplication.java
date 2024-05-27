@@ -11,12 +11,12 @@ public class NewConsumerApplication {
 		SpringApplication.run(NewConsumerApplication.class, args);
 	}
 	
-	@KafkaListener(topics = "test", groupId = "group1")
+	@KafkaListener(topics = "java-partition", groupId = "group1")
     public void listen1(String in) {
         System.out.println("Message received: " + in);
     }
 
-    @KafkaListener(topics = "test", groupId = "group1")
+    @KafkaListener(topics = "java-partition", groupId = "group1")
     public void listen2(String in){
         System.out.println("Message received: " + in);
     }

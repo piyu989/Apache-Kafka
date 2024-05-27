@@ -12,7 +12,7 @@ public class KafkaMessageConsumer {
 	
 	Logger log=LoggerFactory.getLogger(KafkaMessageConsumer.class);
 
-	@KafkaListener(topics = "java3", groupId = "jt-customer")
+	@KafkaListener(topics = "javaPartition", groupId = "jt-customer")
 	public void consumer(Customer customer) {
 		log.info("consume message succesfully "+customer.toString());
 	}
